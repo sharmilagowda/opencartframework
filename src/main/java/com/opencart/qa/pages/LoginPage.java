@@ -20,7 +20,7 @@ public class LoginPage {
 		eleUtil = new ElementUtil(driver);
 	}
 	
-	//3. private By locators PO:
+	//3. private By locators PO:page object
 	
 	private final By loginEmailID = By.id("input-email");
 	private final By password = By.id("input-password");
