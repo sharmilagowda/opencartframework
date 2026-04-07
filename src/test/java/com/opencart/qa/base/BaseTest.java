@@ -16,6 +16,7 @@ import org.testng.annotations.Parameters;
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.opencart.qa.factory.DriverFactory;
 import com.opencart.qa.listeners.TestAllureListener;
+import com.opencart.qa.pages.CartPage;
 import com.opencart.qa.pages.HomePage;
 import com.opencart.qa.pages.LoginPage;
 import com.opencart.qa.pages.ProductInfoPage;
@@ -32,6 +33,7 @@ import com.opencart.qa.pages.SearchResultPage;
 		protected SearchResultPage resultspage;
 		protected ProductInfoPage productinfopage;  
 		protected RegistrationPage registerPage;
+		protected CartPage cartPage;
 	
 		@Parameters({"browser"})
 		@BeforeTest

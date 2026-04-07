@@ -29,6 +29,7 @@ public class HomePage {
 	 private final By headers = By.cssSelector("div#content>h2");
 	 private final By searchtext = By.name("search");
 	 private final By searchImg =By.xpath("//div[@id='search']//button[@type='button']");
+	 private final By cart = By.xpath("//div[@id='cart']/button[@type='button']");
 	 
 	 
 	 //methods/actions (public)
@@ -60,5 +61,11 @@ public class HomePage {
 		 
 	 } //TDD -> Test driven development
 	 
+	 public CartPage clickcart() {
+		 
+		 
+		 return new CartPage(driver);
+		 
+	 }
 	
 }

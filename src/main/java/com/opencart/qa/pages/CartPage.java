@@ -1,7 +1,9 @@
 package com.opencart.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.opencart.qa.utils.AppConstants;
 import com.opencart.qa.utils.ElementUtil;
 
 public class CartPage {
@@ -16,9 +18,6 @@ public class CartPage {
 		
 	}
 	
-	
-	
-	
-	
+
 
 }
