@@ -126,7 +126,9 @@ public class ElementUtil {
 		return getElement(locator).getText();
 	}
 
-	
+	public String doGetAttributeData(By locator, String attributeName) {
+		return getElement(locator).getAttribute(attributeName);
+	}
 	
 	/**
 	 * this method will perform click action on the element
