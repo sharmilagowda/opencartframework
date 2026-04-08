@@ -1,5 +1,6 @@
 package com.opencart.qa.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,15 @@ public class CartTest extends BaseTest {
 	}
 	
   @Test
-  public void f() {
+  public void testItemsCount() {
+	  cartPage= homepage.clickcart();
+	 Assert.assertEquals(cartPage.getitemsCount(),3);
+  }
+  
+  
+  @Test
+  public void getProductdetails() {
+	  cartPage= homepage.clickcart();
+	  cartPage.getproductdata();
   }
 }

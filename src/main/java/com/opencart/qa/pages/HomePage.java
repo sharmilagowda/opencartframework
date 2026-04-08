@@ -30,6 +30,8 @@ public class HomePage {
 	 private final By searchtext = By.name("search");
 	 private final By searchImg =By.xpath("//div[@id='search']//button[@type='button']");
 	 private final By cart = By.xpath("//div[@id='cart']/button[@type='button']");
+	 private final By checkout = By.linkText("View Cart");
+	 
 	 
 	 
 	 //methods/actions (public)
@@ -62,8 +64,8 @@ public class HomePage {
 	 } //TDD -> Test driven development
 	 
 	 public CartPage clickcart() {
-		 
-		 
+		 eleUtil.doClick(cart);
+		 eleUtil.waitForElementReadyandclick(checkout, AppConstants.MEDIUM_TIME_OUT);
 		 return new CartPage(driver);
 		 
 	 }
