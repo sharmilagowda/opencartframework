@@ -17,14 +17,14 @@
  	 </test>
  	 
  	 
- 	  <!--test name="Register Test"> 
+ 	  <test name="Register Test"> 
  	   <parameter name="browser"  value="chrome"/>
     	<classes>
     	  <class name="com.opencart.qa.tests.RegistrationPageTest"/>
   		 </classes>
  	 </test>
  	 
- 	<<test name="HomePage Test"> 
+ 	<test name="HomePage Test"> 
  	   <parameter name="browser"  value="edge"/>
     	<classes>
     	  <class name="com.opencart.qa.tests.HomePageTest"/>
@@ -36,8 +36,8 @@
     	<classes>
     	  <class name="com.opencart.qa.tests.ProductInfoPagetest"/>
   		 </classes>
-  		 gggg
- 	 </test> -->
+  		 
+ 	 </test> 
  	
 
 </suite>
