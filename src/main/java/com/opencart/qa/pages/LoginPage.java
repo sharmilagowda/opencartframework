@@ -30,7 +30,7 @@ public class LoginPage {
 	private final By NewCustRegn = By.className("well");
 	private final By continueBtn= By.linkText("Continue");
 	private final By warningmessage= By.xpath("//div[@class='alert alert-danger alert-dismissible']");
-	
+	private final By testmerge= By.xpath("//div[@class='alert alert-danger alert-dismissible']");
 	
 	//4. Login page methods/actions
 	@Step("Getting login page title")
