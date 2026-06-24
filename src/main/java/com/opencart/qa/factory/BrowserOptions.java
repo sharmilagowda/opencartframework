@@ -8,7 +8,12 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BrowserOptions {
 	
-	Properties  prop;
+	private ChromeOptions co;
+	private FirefoxOptions fo;
+	private EdgeOptions eo;
+
+	private Properties prop;
+	
 	public BrowserOptions(Properties prop) {
 		this.prop=prop;
 	}
@@ -20,6 +25,9 @@ public class BrowserOptions {
 		}
 		if(Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			co.addArguments("--incognito");
+		}if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+			
+			co.setCapability("browserName", "chrome");
 		}
 		return co;
 	}
@@ -32,6 +40,8 @@ public class BrowserOptions {
 		}
 		if(Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			fo.addArguments("--incognito");
+		}if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+			fo.setCapability("browserName", "firefox");
 		}
 		return fo;
 	}
@@ -42,6 +52,9 @@ public class BrowserOptions {
 		}
 		if(Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			eo.addArguments("-inprivate");
+		}
+		if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+			eo.setCapability("browserName", "edge");
 		}
 		return eo;
 	}
